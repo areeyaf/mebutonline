@@ -6,9 +6,9 @@ const { AssetCache } = require("@11ty/eleventy-fetch")
 const md = new MarkdownIt()
 
 const base = new Airtable({
-  apiKey: process.env.AIRTABLE_API_KEY,
-}).base(process.env.AIRTABLE_BASE_ID)
-const table = base("Websites")
+  apiKey: process.env.COOL_SITES,
+}).base(process.env.appLJdDRT9kPihSZN)
+const table = base("Cool sites")
 
 module.exports = async function () {
   const asset = new AssetCache("airtable_sites")
